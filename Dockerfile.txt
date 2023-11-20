@@ -1,0 +1,11 @@
+# Comment
+# escape=\
+FROM windows 10:latest
+MAINTAINER Apati_S
+LABES versoin="1.0"
+RUN pip install python \
+COPY main.py /Docker/main.py
+ADD http://localhost/main.py /Docker/main.py
+WORKDOT /Docker
+ENTRYPOINT["Users/user/Desktop/Docker", "./main.py"]
+
