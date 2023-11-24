@@ -17,5 +17,5 @@ jobs:
             password: ${{ secrets.GITHUB_TOKEN }}
         - run: docker build -t ghcr.io/apatisss/pyhton-app:latest .
         - run: docker push ghcr.io/apatisss/pyhton-app:latest 
-        - run: docker run python-app 
+        - run: docker run ghcr.io/apatisss/pyhton-app:latest 
           
